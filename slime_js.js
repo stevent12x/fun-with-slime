@@ -77,7 +77,7 @@ let config = {
 };
 
 let gui = new dat.GUI({load: getPresetJSON()});
-gui.remember(config;
+gui.remember(config);
 
 let CountController = gui
 	.add(config, "PARTICLES_COUNT", 10, 500)
