@@ -1,8 +1,8 @@
 "use strict";
 
 class Fluid extends Entity {
-	constructor (itt, verify, config) {
-		super (itt, verly);
+	constructor (itteration, verly, config) {
+		super (itteration, verly);
 		this.config = config;
 		
 		this.init();
@@ -17,13 +17,13 @@ class Fluid extends Entity {
 		let p = new Point(
 			random(this.verlyInstance.WIDTH),
 			random(this.verlyInstance.HEIGHT)
-		).setRadius(5);
+		).setRadius(3);
 		this.addPoint(p).setColor(this.config.POINT_COLOR);
 	}
 
 	makeSurfaceTension() {
 		this.sticks = [];
-		for (let i = 0; i < this.points.Length; i++) {
+		for (let i = 0; i < this.points.length; i++) {
 			for (let j = 0; j < this.points.length; j++) {
 				let dist = this.points[i].pos.dist(this.points[j].pos);
 

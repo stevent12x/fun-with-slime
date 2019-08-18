@@ -1,0 +1,16 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+.floating-ui {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
